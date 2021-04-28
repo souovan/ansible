@@ -1,0 +1,15 @@
+---
+- hosts: all
+  gather_facts: false
+  tasks:
+    - name: Install Chocolatey packages
+      win_chocolatey:
+        name:
+        - vscode
+        - git
+        - nvm
+        - docker-desktop
+        - chromium
+        - slack
+        - dropbox
+        state: latest

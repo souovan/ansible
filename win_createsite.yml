@@ -5,8 +5,7 @@
   tasks:
 
     - name: example play to run on a Windows server
-      hosts: all
-  tasks:
+
     - name: create a folder to store IIS site
       win_file:
         path: C:\ansible

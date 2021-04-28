@@ -3,9 +3,6 @@
   gather_facts: false
   
   tasks:
-
-    - name: example play to run on a Windows server
-
     - name: create a folder to store IIS site
       win_file:
         path: C:\ansible

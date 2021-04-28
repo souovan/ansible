@@ -1,7 +1,6 @@
 ---
 - hosts: all
   tasks:
-   - name: run an executable using win_command
-     win_command: whoami.exe
-   - name: run a cmd command
-      win_command: cmd.exe /c mkdir C:\test
+- name: Save the result of 'whoami' in 'whoami_out'
+  win_command: whoami
+  register: whoami_out

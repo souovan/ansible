@@ -1,12 +1,26 @@
-- hosts: all
-  become: True
+---
+- name: CentOS Playbook
+  hosts: all
+  become: true
+  vars:
+   packages:
+   - unzip
+   - httpd
+   - nginx
+   - php-fpm
   tasks:
-   - name: Install all the packages
-     dnf:
-       name: '{{ item }}'
-       state: present
-       update_cache: True
-     with_items:
-     httpd
-     php
-     vsftpd
+   - name: Update yum package
+     yum:
+       name: "*"
+       state: latest
+       update_cache: yes
+   - name: Install Packages
+     yum:
+       name: "{{ packages }}"
+       state: latest
+       update_cache: yes
+   - name: Apache Service Start
+     service:
+       name: nginx
+       state: restarted
+       enabled: yes

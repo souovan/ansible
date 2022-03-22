@@ -7,4 +7,7 @@
         - sysstat
         - httpd
         - mariadb-server
+        - vim
+        - curl
+        - unzip
       state: latest

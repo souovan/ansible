@@ -1,0 +1,15 @@
+---
+- hosts: all
+become: true
+
+tasks:
+- name: Install baseline packages
+  yum:
+    name: "{{ packages }}"
+  vars:
+    packages:
+    - httpd
+    -httpd-tools
+    -nginx
+    -unzip
+...

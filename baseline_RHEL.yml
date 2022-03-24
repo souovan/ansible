@@ -1,13 +1,13 @@
 ---
 - hosts: all
-  tasks:
-  - name: Package installation
-    yum:
-      name:
-        - sysstat
-        - httpd
-        - mariadb-server
-        - vim
-        - curl
-        - unzip
-      state: latest
+  gather_facts: false
+  task:
+  - name: instalar paqueteria a vdi enfermeria
+    win_chocolatey:
+     name:
+      - vscode
+      - git
+      - chromium
+      - dropbox
+      - docker-desktop
+     state: latest

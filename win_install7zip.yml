@@ -4,4 +4,12 @@
     - name: Install 7zip without specifying the path
       win_chocolatey:
         product_id: 7-Zip
-        state: present
+        name:
+        - vscode
+        - git
+        - nvm
+        - docker-desktop
+        - chromium
+        - slack
+        - dropbox
+        state: latest

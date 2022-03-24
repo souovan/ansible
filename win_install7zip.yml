@@ -2,10 +2,8 @@
 - hosts: all
   gather_facts: false
   tasks:
-    - name: Install 7zip choco
-      chocolatey.chocolatey.win_chocolatey:
-        name: 7zip
-        state: present
-        pinned: yes
-        architecture: x86
-        force: yes
+  - name: Uninstall 7zip without specifying the path
+      win_package:
+        product_id: 7-Zip
+        arguments: /S
+        state: absent

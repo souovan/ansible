@@ -1,8 +1,7 @@
 ---
 - hosts: all
-  gather_facts: false
   tasks:
-    - name: Uninstall 7zip without specifying the path
-      chocolatey.chocolatey.win_chocolatey:
+    - name: Install 7zip without specifying the path
+      win_chocolatey:
         product_id: 7-Zip
         state: present

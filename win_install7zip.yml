@@ -3,7 +3,8 @@
   gather_facts: false
   
   tasks:
-    - name: Ensure 7-Zip is installed via Chocolatey
-      win_chocolatey:
-        name: 7zip
-        state: present
+  - name: Install 7zip choco
+    win_chocolatey:
+      name: 7zip
+      state: present
+        

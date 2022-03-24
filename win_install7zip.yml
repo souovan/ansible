@@ -2,8 +2,8 @@
 - hosts: all
   gather_facts: false
   tasks:
-  - name: Uninstall 7zip without specifying the path
-      win_package:
-        product_id: 7-Zip
-        arguments: /S
-        state: absent
+    - name: Uninstall 7zip without specifying the path
+        win_package:
+          product_id: 7-Zip
+          arguments: /S
+          state: absent

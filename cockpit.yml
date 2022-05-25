@@ -22,5 +22,5 @@
       state: restarted
   - name: cockpit socket
     service:
-      name: cockpit.socket:
+      name: cockpit.socket
       enabled: yes

@@ -7,7 +7,6 @@
     yum:
       name: httpd
       state: removed
- 
   - name: Restart the firewalld service to load in the firewall changes
     service: 
       name: firewalld 

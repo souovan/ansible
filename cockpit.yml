@@ -1,7 +1,7 @@
 ---
 - name: install cockpit
   hosts: all
-  
+  become: yes
   tasks:
   - name: install cockpit
     yum:

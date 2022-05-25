@@ -1,6 +1,6 @@
 ---
 - name: httpd
-  hosts: all
+  hosts: web
   become: yes
   tasks:
   - name: Install apache packages 

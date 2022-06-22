@@ -1,0 +1,11 @@
+---
+  - name: Install the {{ package }} package
+    apt:
+      name: "{{ package }}"
+      state: latest
+      update_cache: yes
+  - name: Start the {{ service }} service
+    service:
+      name: "{{ service }}"
+      enabled: true
+      state: started

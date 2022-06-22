@@ -1,0 +1,5 @@
+---
+- name: Import and execute task template to install package and enable service
+  tasks:
+    - name: # DESCRIBE TASK TO BE EXECUTED
+      import_tasks: # INSERT TASK TO BE IMPORTED <tasks/task_template.yml>

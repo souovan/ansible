@@ -1,8 +1,0 @@
----
-- name: Import and execute task template to install package with yum and start service
-  tasks:
-    - name: Import task file and set variables
-      import_tasks: install_package_yum.yml
-      vars:
-        package: # INSERT PACKAGE
-        service: # INSERT SERVICE

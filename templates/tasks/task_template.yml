@@ -1,0 +1,6 @@
+---
+- name: Install and enable # INSERT PACKAGE AND SERVICE TO BE INSTALLED AND ENABLED
+  import_tasks: # INSERT install_and_enable_<yum/apt>.yml
+  vars:
+    package: # INSERT PACKAGE
+    service: # INSERT SERVICE

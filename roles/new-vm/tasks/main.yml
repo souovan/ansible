@@ -1,0 +1,6 @@
+---
+# tasks file for new-vm
+- name: Create a new vm on some hypervisor
+  debug:
+    msg: Creating a new vm on some hypervisor {{ machine_name }} | {{ cpu_size }} | {{ memory_size }} | {{ disk_size }}  
+    

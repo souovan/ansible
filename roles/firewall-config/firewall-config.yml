@@ -1,0 +1,6 @@
+# Playbook to configure firewall
+- name: Use firewall-config role playbook
+  hosts: localhost
+
+  roles:
+    - firewall-config

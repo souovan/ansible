@@ -1,0 +1,5 @@
+---
+# vars file for firewall-config
+firewall_name: ALGUM FIREWALL
+port_to_be_openned: 80000
+port_to_be_closed: 90000

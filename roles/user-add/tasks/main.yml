@@ -1,0 +1,5 @@
+---
+# tasks file for user-add
+- name: Add some user on some OS
+  debug:
+    msg: Adding some user on some OS {{ username }} | {{ user_pass }} | {{ user_group }} | {{ user_groups }} | {{ user_folder }} | {{ user_shell }}

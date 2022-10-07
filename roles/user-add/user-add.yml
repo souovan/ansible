@@ -1,0 +1,6 @@
+# Playbook to create new user
+- name: Use user-add role playbook
+  hosts: localhost
+
+  roles:
+   - user-add

@@ -1,0 +1,10 @@
+---
+# tasks file for firewall-config
+- name: Abrindo a porta {{ port_to_be_openned }} do {{ firewall_name }}
+  debug:
+    msg: Porta {{ port_to_be_openned }} do {{ firewall_name }} aberta
+
+
+- name: Fechando a porta {{ port_to_be_closed }} do {{ firewall_name }}
+  debug:
+    msg: Porta {{ port_to_be_closed }} do {{ firewall_name }} fechada

@@ -1,0 +1,8 @@
+---
+# vars file for user-add
+username: NOVO USUARIO
+user_pass: SENHA DO USUARIO
+user_group: GRUPO DO NOVO USUARIO
+user_groups: GRUPOS DO NOVO USUARIO
+user_folder: PASTA DO NOVO USUARIO
+user_shell: SHELL DO NOVO USUARIO

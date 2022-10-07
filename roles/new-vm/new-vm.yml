@@ -1,0 +1,6 @@
+# Playbook to create a new vm
+- name: Use new-vm role playbook
+  hosts: localhost
+
+  roles:
+    - new-vm

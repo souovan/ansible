@@ -1,0 +1,6 @@
+---
+# vars file for new-vm
+machine_name: NOME DA VM
+cpu_size: QUANTIDADE DE CPU
+memory_size: QUANTIDADE DE MEMÓRIA
+disk_size: TAMANHO DO DISCO
